@@ -12,6 +12,12 @@ it("Should reduce a fraction", function () {
   expect(f1.reduce()).toEqual({ numerator: 1, denominator: 2 });
 });
 
+it("Should reduce a fraction with floating points precision", function () {
+  const f1 = new Fraction(3, 3);
+
+  expect(f1.reduce()).toEqual({ numerator: 1, denominator: 1 });
+});
+
 it("Should handle both negative nominator and denominator", function () {
   const f1 = new Fraction(-2, -5);
 
