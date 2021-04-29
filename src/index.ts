@@ -1,9 +1,3 @@
-import { printDiamond } from "./diamond";
-import { printFizzbuzz } from "./fizzbuzz";
-
 export function systemUnderTest(): boolean {
-  return true;
+  return true
 }
-
-printDiamond();
-printFizzbuzz();
